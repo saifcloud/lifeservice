@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Comfortaa:wght@400;500&display=swap');
+body {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Comfortaa', cursive;
+    color: #58595B;
+}
+
+.box-size {
+    width: 490px;
+    margin: auto;
+}
+
+.nav-item a {
+    font-size: 24px;
+    color: black;
+}
+
+.navbar-brand i {
+    color: black;
+}
+
+.data ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: auto;
+    background: #f2f3f5;
+}
+
+.data ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.data i {
+    font-size: 22px;
+}
+
+.data span {
+    font-size: 18px;
+    color: #222222;
+    font-weight: 700;
+    text-transform: capitalize !important;
+}
+
+.data small {
+    text-transform: lowercase;
+    font-size: 15px;
+}
+
+.sub-btn {
+    background-color: #ee8851;
+    border-radius: 20px;
+    color: white;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    position: fixed;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 490px;
+}
+
+.nav-item a {
+    font-weight: 800;
+}
+
+.clock-img i {
+    margin-top: 45px;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.content h4 {
+    font-weight: 600px !important;
+    color: #ee8851;
+}
+
+.content p {
+    line-height: 24px;
+}
+label{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom:0px;
+}
+@media screen and (max-width: 991px) and (min-width: 320px) {
+    .box-size{
+        width: auto;
+    }
+
+    .sub-btn{
+        width: 100%;
+    }
+    .nav-item a{
+        font-size: 20px;
+    }
+    .data ul{
+        max-height: 400px;
+        overflow: auto;
+    }
+}
