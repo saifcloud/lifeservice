@@ -28,6 +28,7 @@ class CreateUsersTable extends Migration
             $table->string('fcm_token');
             $table->string('device_token');
             $table->string('role')->comment('1=>user,2=>provider');
+            $table->enum('language',['en','ar','kur']);
             $table->integer('status')->comment('1=>active')->default(0);
             $table->integer('is_deleted')->comment('1=>deleted')->default(0);
             $table->rememberToken();

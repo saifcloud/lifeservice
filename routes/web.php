@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
-
+use App\Models\Apply;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,15 +14,17 @@ use App\Http\Controllers\API\AuthController;
 |
 */
 
+
+
+// Route::get('/database-clear', 'AuthController@databaseclear');
+Route::get('/database-clear',function(){
+    Subcategory::truncate();
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/', function() {
-//    return response()->json([
-//     'stuff' => phpinfo()
-//    ]);
-// });
 
 Route::get('/clear', function() {
     

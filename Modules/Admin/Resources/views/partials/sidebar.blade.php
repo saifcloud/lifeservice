@@ -297,7 +297,19 @@
           </a>
         </li>
         
-        
+        <li class="{{request()->segment(2)=='customer' ? 'active':''}}">
+          <a href="{{ url('admin/customer')}}">
+            <i class="fa fa-dashboard"></i> <span>Customers</span>
+          </a>
+        </li>
+
+        <li class="{{request()->segment(2)=='provider' ? 'active':''}}">
+          <a href="{{ url('admin/provider')}}">
+            <i class="fa fa-dashboard"></i> <span>Providers</span>
+          </a>
+        </li>
+
+
         <li class="{{request()->segment(2)=='category' || request()->segment(2)=='edit-category' ? 'active':''}}">
           <a href="{{ url('admin/category')}}">
             <i class="fa fa-dashboard"></i> <span>Category</span>
@@ -315,6 +327,8 @@
             <i class="fa fa-dashboard"></i> <span>Document setting</span>
           </a>
         </li>
+
+        
         
     
       </ul>
